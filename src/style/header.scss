@@ -1,0 +1,92 @@
+.header {
+  padding: 13px 36px 13px 0;
+
+  color: $nav-color;
+  &-top {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    &__adress {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 400;
+      column-gap: 14px;
+      &::before {
+        position: relative;
+        content: url(/src/assets/images/icons/House.svg);
+
+        top: 1px;
+      }
+    }
+    &__contact {
+      display: flex;
+      column-gap: 76px;
+      align-items: center;
+      column-gap: 100px;
+      &-mail {
+        display: flex;
+        column-gap: 14px;
+        align-items: center;
+        &::before {
+          position: relative;
+          top: 2px;
+          content: url(/src/assets/images/icons/post.svg);
+        }
+      }
+      &-phone {
+        display: flex;
+        column-gap: 14px;
+        align-items: center;
+        &::before {
+          position: relative;
+          top:2px;
+          content: url(/src/assets/images/icons/phone.svg);
+
+        }
+      }
+    }
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 5px;
+  &-title {
+    font-size: 26px;
+    font-weight: 800;
+  }
+  &-list {
+    color: $nav-color;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    max-width: 650px;
+    column-gap: 30px;
+  }
+  &-groups {
+    display: flex;
+    column-gap: 11px;
+    &__el {
+      width: 24px;
+      height: 24 px;
+      &.telegram::before {
+        content: url(/src/assets/images/icons/teleg.svg);
+      }
+      &.whatsUp::before {
+        content: url(/src/assets/images/icons/WatsUp.svg);
+      }
+      &.facebook::before {
+        content: url(/src/assets/images/icons/facebook.svg);
+      }
+      &.vk::before {
+        content: url(/src/assets/images/icons/VK.svg);
+      }
+      &.inst::before {
+        content: url(/src/assets/images/icons/insta.svg);
+      }
+    }
+  }
+}

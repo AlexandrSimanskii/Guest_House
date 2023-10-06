@@ -2,16 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
-.container{
-  max-width: 1260px;
+.container {
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 30px;
 }
-$mainColor: green;
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: $mainColor;
+  font-style: normal;
 }
+$nav-color: #1e1e1e;
+
+@import "header";
